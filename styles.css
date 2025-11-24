@@ -1,0 +1,99 @@
+body {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  background-attachment: fixed;
+  font-family: "Press Start 2P", cursive;
+}
+
+#level-title {
+  font-size: 2.5rem;
+  margin: 40px 0;
+  color: #fef2bf;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+#start-btn {
+  font-family: "Press Start 2P", cursive;
+  font-size: 1.2rem;
+  padding: 15px 30px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  margin-top: 80px;
+  padding-bottom: 10px;
+  color: #fef2bf;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: 0.2s ease;
+}
+
+#start-btn:hover {
+  background: rgba(255, 255, 255, 0.35);
+  transform: scale(1.05);
+}
+
+#start-btn:active {
+  transform: scale(0.95);
+}
+
+.container {
+  width: 420px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  margin: 20px;
+  height: 160px;
+  width: 160px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 80px;
+  cursor: pointer;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.pressed {
+  transform: scale(0.88);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Game over uniform red background */
+.game-over {
+  background: #8b0000 !important;
+}
+
+.game-over .btn {
+  backdrop-filter: none !important;
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 2px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: none !important;
+}
+
+body,
+.btn {
+  user-select: none;
+  -webkit-user-select: none;
+}
